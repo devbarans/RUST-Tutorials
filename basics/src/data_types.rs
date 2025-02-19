@@ -1,3 +1,8 @@
+// pub anahtar kelimesi ile fonksiyonu dışarıdan erişilebilir hale getiriyoruz.
+// Bu sayede main.rs dosyasından bu fonksiyonu çağırabiliriz.
+// Bu dosyada veri tipleri ile ilgili örnekler bulunmaktadır.
+// Swiftte ki public anahtar kelimesi ile aynı işlevi görür.
+
 pub fn run(){
     // String değişken tanımladık
     let name: String = String::from("Rust");
