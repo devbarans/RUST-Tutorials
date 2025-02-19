@@ -2,10 +2,16 @@
 // Rust'ta modül oluşturmak için mod anahtar kelimesi kullanılır.
 mod data_types;
 mod vectors;
+mod print_debug;
+
+// main fonksiyonu rust programlarının giriş noktasıdır.
+// Rust programları çalıştırıldığında ilk olarak main fonksiyonu çalıştırılır.
+// Rust'ta fonksiyonlar snake_case ile yazılır.
 fn main() {
    
     // :: ile modülün fonksiyonlarına erişebiliriz.
-    // Modüller çağrılırken boşluk bırakılmaz.Hataya sebeb olabilir.
+    // Modüller çağrılırken boşluk bırakılmaz.Hataya sebep olabilir.
     data_types::run();  // data_types modülündeki run fonksiyonunu çağırıyoruz.
     vectors::run();    // vectors modülündeki run fonksiyonunu çağırıyoruz.
+    print_debug::run(); // print_debug modülündeki run fonksiyonunu çağırıyoruz.
 }
