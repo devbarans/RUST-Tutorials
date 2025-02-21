@@ -4,6 +4,8 @@ mod data_types;
 mod vectors;
 mod print_debug;
 mod strings;
+mod functions;
+
 // main fonksiyonu rust programlarının giriş noktasıdır.
 // Rust programları çalıştırıldığında ilk olarak main fonksiyonu çalıştırılır.
 // Rust'ta fonksiyonlar snake_case ile yazılır.
@@ -15,4 +17,5 @@ fn main() {
     vectors::run();    // vectors modülündeki run fonksiyonunu çağırıyoruz.
     print_debug::run(); // print_debug modülündeki run fonksiyonunu çağırıyoruz.
     strings::run();    // strings modülündeki run fonksiyonunu çağırıyoruz.
+    functions::run(); // functions modülündeki run fonksiyonunu çağırıyoruz.
 }
