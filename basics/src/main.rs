@@ -5,6 +5,7 @@ mod vectors;
 mod print_debug;
 mod strings;
 mod functions;
+mod control_flows;
 
 // main fonksiyonu rust programlarının giriş noktasıdır.
 // Rust programları çalıştırıldığında ilk olarak main fonksiyonu çalıştırılır.
@@ -18,4 +19,5 @@ fn main() {
     print_debug::run(); // print_debug modülündeki run fonksiyonunu çağırıyoruz.
     strings::run();    // strings modülündeki run fonksiyonunu çağırıyoruz.
     functions::run(); // functions modülündeki run fonksiyonunu çağırıyoruz.
+    control_flows::run(); // control_flows modülündeki run fonksiyonunu çağırıyoruz.
 }
