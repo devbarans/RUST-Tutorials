@@ -6,6 +6,7 @@ mod print_debug;
 mod strings;
 mod functions;
 mod control_flows;
+mod ownership;
 
 // main fonksiyonu rust programlarının giriş noktasıdır.
 // Rust programları çalıştırıldığında ilk olarak main fonksiyonu çalıştırılır.
@@ -20,4 +21,6 @@ fn main() {
     strings::run();    // strings modülündeki run fonksiyonunu çağırıyoruz.
     functions::run(); // functions modülündeki run fonksiyonunu çağırıyoruz.
     control_flows::run(); // control_flows modülündeki run fonksiyonunu çağırıyoruz.
+    ownership::run(); // ownership modülündeki run fonksiyonunu çağırıyoruz.
+
 }
