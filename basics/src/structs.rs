@@ -26,7 +26,7 @@ pub fn run() {
         level: 5,
         position: Position(12.0, 8.5),
     };
-    println!("Player: {} at position ({}, {})", player.name, player.position.0, player.position.1);
+    println!("Player: {} (Level: {}) at position ({}, {})", player.name, player.level, player.position.0, player.position.1);
 }
 
 /// `Position` yapısı, bir nesnenin x ve y koordinatlarını temsil eden bir tuple struct'tır.
