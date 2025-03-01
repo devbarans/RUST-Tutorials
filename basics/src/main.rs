@@ -8,6 +8,7 @@ mod functions;
 mod control_flows;
 mod ownership;
 mod structs;
+mod lifetimes;
 // main fonksiyonu rust programlarının giriş noktasıdır.
 // Rust programları çalıştırıldığında ilk olarak main fonksiyonu çalıştırılır.
 // Rust'ta fonksiyonlar snake_case ile yazılır.
@@ -22,5 +23,7 @@ fn main() {
     functions::run(); // functions modülündeki run fonksiyonunu çağırıyoruz.
     control_flows::run(); // control_flows modülündeki run fonksiyonunu çağırıyoruz.
     ownership::run(); // ownership modülündeki run fonksiyonunu çağırıyoruz.
-    structs::run()
+    structs::run(); // structs modülündeki run fonksiyonunu çağırıyoruz.
+    lifetimes::run(); // lifetimes modülündeki run fonksiyonunu çağırıyoruz.
 }
+
