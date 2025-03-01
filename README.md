@@ -4,7 +4,7 @@ This folder is created to learn the Rust programming language from scratch and d
 
 ## Current Progress:
 
-### [**Basics**](./basics):
+### [**Basics**](./basics/src):
 - **Data Types**: Understanding primitive and compound types in Rust.
 - **Functions**: Defining and calling functions, understanding parameter passing.
 - **Strings**: Understanding string handling and manipulation in Rust.
