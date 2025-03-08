@@ -9,7 +9,6 @@
 
 use rand::Rng; // Rastgele sayı üretimi için
 
-
 // -------------------------------------------------------
 // Ana Fonksiyon: Tüm Fonksiyonların Çalıştırılması
 // -------------------------------------------------------
@@ -214,8 +213,8 @@ enum HttpStatus {
 // Rastgele bir HTTP durumunu simüle eden fonksiyon.
 // Gerçek bir sağlık kontrolü çağrısına benzetilmiştir.
 fn ping(service_url: &str) -> HttpStatus {
-    let mut rng = rand::thread_rng();
-    let random_value = rng.gen_range(0..=10);
+    let mut rng = rand::rng();
+    let random_value = rng.random_range(1..=10);
     println!("{} adresine ping atılıyor...", service_url);
     
     match random_value {
