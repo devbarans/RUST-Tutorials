@@ -4,6 +4,7 @@ mod generics;
 mod traits;
 mod built_in_traits;
 mod error_handling;
+mod tests;
 
 fn main() {
     enums::run();
@@ -11,5 +12,5 @@ fn main() {
     generics::run();
     traits::run();
     built_in_traits::run();
-    // error_handling::run();
+    
 }
