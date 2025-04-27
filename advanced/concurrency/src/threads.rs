@@ -175,7 +175,3 @@ fn scoped_threads_example() {
 // 4. **Performans Analizi**: `perf` veya `tracing` ile thread performansını ölçün.
 // 5. **Alternatif Kilitler**: `Mutex` yerine `RwLock` veya `AtomicUsize` gibi hafif
 //    alternatifler deneyin.
-
-fn main() {
-    run();
-}
