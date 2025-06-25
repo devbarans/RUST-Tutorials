@@ -2,9 +2,8 @@
 
 This folder is created to learn the Rust programming language from scratch and develop various projects. It includes examples and notes covering fundamental concepts to advanced topics.
 
----
 
-##  Current Progress
+## Current Progress
 
 ###  [**Basics**](./basics/src):
 Beginner-level topics with examples and explanations.
@@ -36,12 +35,18 @@ Concepts to help you write idiomatic, efficient, and reusable Rust code.
 
 ---
 
-## 🧭 Upcoming Topics
+###  [**Advanced**](./advanced/src):
+In-depth topics to build robust, performant, and concurrent Rust applications.
 
-- Advanced topics such as asynchronous programming, concurrency, macros, and crate/module organization.
-- Real-world project-based tutorials and performance tuning tips.
-- Integration with WebAssembly (WASM), networking, and Rust-based backend APIs.
+- **asynchronous_programming/**: Working with async/await, and using runtimes like `tokio` for asynchronous tasks.
+- **channels/**: Using Rust channels (`mpsc`, `sync`) for safe message passing between threads.
+- **concurrency/**: Managing shared state across threads with locks and `Arc`; thread spawning and coordination.
+- **deadlock_and_poisoning/**: Handling deadlocks and poisoned mutexes in multithreaded programs.
+- **macros/**: Writing declarative macros (`macro_rules!`) for reusable, DRY code generation.
+- **parallelism/**: Implementing parallel computations using crates like `rayon` for data-parallelism.
+- **smart_pointers/**: Deep dive into `Box`, `Rc`, `RefCell`, `Arc`, and their interior mutability patterns.
+- **streams/**: Using asynchronous streams and sinks with `futures` and `tokio-stream` for data pipelines.
+- **unsafe_zone/**: Using `unsafe` blocks responsibly, working with raw pointers, FFI, and low-level operations.
 
----
 
-Stay tuned for more tutorials and hands-on projects as we continue exploring Rust!
+
