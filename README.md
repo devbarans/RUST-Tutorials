@@ -35,7 +35,7 @@ Concepts to help you write idiomatic, efficient, and reusable Rust code.
 
 ---
 
-###  [**Advanced**](./advanced/src):
+###  [**Advanced**](./advanced):
 In-depth topics to build robust, performant, and concurrent Rust applications.
 
 - **asynchronous_programming/**: Working with async/await, and using runtimes like `tokio` for asynchronous tasks.
