@@ -3,7 +3,7 @@
 This folder is created to learn the Rust programming language from scratch and develop various projects. It includes examples and notes covering fundamental concepts to advanced topics.
 
 
-## Current Progress
+# Current Progress
 
 ###  [**Basics**](./basics/src):
 Beginner-level topics with examples and explanations.
