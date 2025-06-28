@@ -1,8 +1,8 @@
-use axum::{routing::{get, post}, Router};
+use axum::{routing::{get}, Router, Json};
 
 /*
     -router ile json formatında ki girdileri belirliyoruz burada ki / anasayfayı işaret ediyor
-
+    -axum ile gelen istekleri dinliyoruz.Test için postman kullanabilirsin veya browser'dan http://localhost:8080/vehicle aratarak istek gönderebilirsin.
 
 */
 
@@ -27,10 +27,30 @@ async fn main() {
 
 }
 
-async fn vehicle_get(){
-
+#[derive(serde::Serialize, serde::Deserialize)]
+struct Vehicle{
+    manufacturer: String,
+    model: String,
+    year: u32,
+    id: Option<String>
 }
 
-async fn vehicle_post(){
+// Browser'dan veya Postman'den GET isteği gönderildiğinde çalışır.
+#[axum::debug_handler] // hata ayıklama için
+async fn vehicle_get() -> axum::Json<Vehicle> {
+    Json::from(
+        Vehicle {
+            manufacturer: "BMW".to_string(),
+            model: "3".to_string(),
+            year: 2025,
+            id: Some(uuid::Uuid::new_v4().to_string()),
+        }
+    )
+}
+
+async fn vehicle_post(Json(vehicle): Json<Vehicle>) -> Json<Vehicle> {
+    // Gelen veriyi işleyebiliriz, burada sadece geri döndürüyoruz
+    // Örneğin, veritabanına kaydedebiliriz veya başka işlemler yapabiliriz.
+    Json(vehicle)
 
 }
