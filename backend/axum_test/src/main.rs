@@ -15,7 +15,7 @@ async fn main() {
     post(vehicle_post));
 
     // ip ve port listener(tcp) tanımlıyoruz
-    let addr = "0.0.0.0.6570";
+    let addr = "0.0.0.0:8080";  // Daha yaygın kullanılan bir port
     let listener = tokio::net::TcpListener::bind(addr)
     .await
     .unwrap();
